@@ -392,14 +392,120 @@
     }
   }
 }
-.founding_team {
+.about_us {
   padding: 2rem 7.5vw;
   width: 100%;
+  .section_header {
+    display: flex;
+    P {
+      margin: 20px auto;
+    }
+  }
+  .section_desc {
+    display: flex;
+    P {
+      margin: 30px auto;
+    }
+  }
+  .left_right_parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .left_div_parent {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+
+      .story {
+        text-align: right;
+        max-width: 85%;
+        .year {
+          p {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+        .section_desc {
+          P {
+            font-size: 1rem;
+          }
+        }
+      }
+      img {
+        height: 10rem;
+        margin: auto;
+      }
+    }
+    .right_div_parent {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+
+      .story {
+        text-align: left;
+        max-width: 85%;
+        .year {
+          p {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+        .section_desc {
+          P {
+            font-size: 1rem;
+          }
+        }
+      }
+      img {
+        height: 10rem;
+        margin: auto;
+      }
+    }
+  }
+
   .team_parent {
     max-width: 35%;
   }
   .team_img_parent {
     display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 50px auto;
+    justify-content: space-around;
+  }
+}
+.team_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #82c85c;
+  margin: 0px 25px;
+  height: 600px;
+  border-radius: 20px;
+
+  img {
+    height: 400px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+.team_name {
+  p {
+    font-family: "Roboto";
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+.team_position {
+  p {
+    font-family: "Roboto";
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
   }
 }
 .company_skills {
@@ -417,6 +523,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 150px;
+    img {
+      height: 500px;
+      max-width: 75%;
+      margin: 50px auto;
+    }
     .company_skills_txt {
       max-width: 70%;
 
@@ -441,48 +552,6 @@
       }
     }
   }
-  .bar_parent {
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 1000px;
-    height: 500px;
-    background-color: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: relative;
-
-    .bar_1 {
-      height: 100%;
-      width: 15%;
-      background-color: #2d8a5e;
-      position: relative;
-    }
-    .bar_2 {
-      height: 80%;
-      width: 15%;
-      background-color: #4dbb74;
-      position: relative;
-    }
-    .bar_3 {
-      height: 70%;
-      width: 15%;
-      background-color: #82c85c;
-      position: relative;
-    }
-    .bar_4 {
-      height: 65%;
-      width: 15%;
-      background-color: #bfef4e;
-      position: relative;
-    }
-    .bar_5 {
-      height: 50%;
-      width: 15%;
-      background-color: #2d8a5e;
-      position: relative;
-    }
-  }
 }
 .clients {
   padding: 2rem 7.5vw;
@@ -501,14 +570,50 @@
   }
 }
 
-.bar_1_child {
-  text-align: left;
+.footer {
   width: 100%;
-  position: relative;
-  transform: rotate(-90deg);
-  p {
-    font-family: "Roboto";
-    font-weight: bold;
-    color: white;
+  padding: 0 7.5vw;
+  min-height: 1000px;
+  background-color: #2d8a5e;
+  .footer_top_end {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0px;
+    justify-content: space-around;
+
+    .f_column_1 {
+      display: flex;
+      flex-direction: column;
+      max-width: 30%;
+      justify-content: space-between;
+      img {
+        height: 100px;
+        width: 100px;
+        align-items: flex-start;
+        margin: 20px 0px;
+      }
+      p {
+        font-family: "Roboto";
+        color: #fff;
+      }
+    }
+    .f_column_2 {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-evenly;
+      .f_c_header {
+        P {
+          font-family: "Roboto";
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+      p {
+        font-family: "Roboto";
+        color: #fff;
+        font-weight: 00;
+      }
+    }
   }
 }
