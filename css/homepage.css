@@ -61,8 +61,14 @@
 }
 
 .main .header_div .logo {
-  height: 80px;
-  width: 80px;
+  margin-top: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.main .header_div .logo_2 {
+  height: 60px;
+  width: 150px;
 }
 
 .main .header_div .header_right {
@@ -365,6 +371,7 @@
 }
 
 .gootycart .gooty_cart .gootycart_child img {
+  margin-top: 15px;
   max-width: 20%;
 }
 
@@ -691,29 +698,16 @@
 }
 
 .team_card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  text-align: center;
   background-color: #82c85c;
   margin: 0px 25px;
-  height: 600px;
   border-radius: 20px;
 }
 
 .team_card img {
   height: 400px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
+  margin-bottom: 2rem;
 }
 
 .team_name p {
@@ -721,6 +715,7 @@
   color: #fff;
   font-weight: bold;
   font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .team_position p {
@@ -728,6 +723,7 @@
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .company_skills {
@@ -887,5 +883,59 @@
   font-family: "Roboto";
   color: #fff;
   font-weight: 00;
+}
+
+.footer .bottom_end {
+  width: 80%;
+  height: 500px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.footer .bottom_end .section_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .bottom_end .section_header p {
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+.footer .bottom_end .we_are_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer .bottom_end .we_are_info p {
+  margin: 10px auto;
+  font-family: "Roboto";
+  padding: 0px 80px;
+}
+
+.footer .bottom_end .we_bold {
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+.footer .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer .end p {
+  margin: 20px auto;
+  font-family: "Roboto";
+  color: #fff;
 }
 /*# sourceMappingURL=homepage.css.map */
