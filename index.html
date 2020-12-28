@@ -12,10 +12,30 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+
     <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/testimonial.css" />
   </head>
   <body>
     <section class="main" id="main">
+      <!-- <img
+        class="overlay"
+        src="/assests/Images/backgrounds/overlay.png"
+        alt=""
+      /> -->
       <div class="header_div">
         <img
           class="logo"
@@ -67,7 +87,7 @@
       </div>
       <div class="exit">
         <p>INVEST-to-EXIT</p>
-        <button class="inv_to_ext">GET STARTED</button>
+        <button class="inv_to_ext cspbutton">GET STARTED</button>
       </div>
 
       <div class="footer_1">
@@ -334,52 +354,99 @@
         </div>
       </div>
     </section>
-    <section class="testimonials" id="testimonials">
-      <div class="testimonial_main">
-        <div class="test_txt"><p>TESTIMONIALS</p></div>
-        <div class="desc_img_parent">
-          <img src="/assests/Images/testimonial/test1.png" alt="saleem_img" />
-          <div class="test_desc">
+    <section id="testim" class="testim">
+      <!--         <div class="testim-cover"> -->
+
+      <header>
+        <h1>TESTIMONIALS</h1>
+      </header>
+
+      <div class="wrap">
+        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+
+        <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+        <ul id="testim-dots" class="dots">
+          <li class="dot active"></li>
+
+          <li class="dot"></li>
+
+          <li class="dot"></li>
+
+          <li class="dot"></li>
+        </ul>
+
+        <div id="testim-content" class="cont">
+          <div class="active">
+            <div class="img">
+              <img
+                src="assests/Images/testimonial/test1.png"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+
             <p>
               “After investing and co-owning one of their IoT startups
               inexpensively, I was rewarded with a successful early exit. Happy
               with the results, I organized this again and have already ordered
               my second startup!”
             </p>
-            <div class="saleem"><p>-Saleem</p></div>
+
+            <h2>- Saleem</h2>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="testimonials" id="testimonials">
-      <div class="testimonial_main">
-        <div class="test_txt"><p>TESTIMONIALS</p></div>
-        <div class="desc_img_parent">
-          <img src="/assests/Images/testimonial/test2.png" alt="saleem_img" />
-          <div class="test_desc">
+
+          <div>
+            <div class="img">
+              <img
+                src="assests/Images/testimonial/test2.png"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+
             <p>
-              "I love startup investing and csPillai made it very simple, their
-              invest2exit schemes and famous ‘e-f-o route’ made co-owning
-              ventures so simple. I put down the capital for the exchange of
-              equity, journeyed along, enjoyed, and had a profitable early exit,
-              so yes, I highly recommend them!"
+              “I love startup investing, and csPillai made it very interesting;
+              the three invest2exit schemes and their famous ‘e-f-o route’ made
+              co-owning ventures simple. I put down the capital for the exchange
+              of equity, journeyed along, enjoyed, and had a profitable early
+              exit, so yes, I highly recommend them!”
             </p>
-            <div class="saleem"><p>-Govardhanrao</p></div>
+
+            <h2>- Govardhanrao</h2>
+          </div>
+
+          <div>
+            <div class="img">
+              <img
+                loading="lazy"
+                src="assests/Images/testimonial/test3.png"
+                alt=""
+              />
+            </div>
+
+            <p>“csPILLAI is a seasoned VB! I highly recommend them.”</p>
+
+            <h2>- Ajay</h2>
+          </div>
+
+          <div>
+            <div class="img">
+              <img src="assets/testimonials/avatar.png" loading="lazy" alt="" />
+            </div>
+
+            <p>
+              “csPillai is building a 5G telecom startup for us to own and exit.
+              I am anxiously waiting for the buzz creation and am super excited
+              to taste my new business model innovation fruits!”
+            </p>
+
+            <h2>- Shivashankar</h2>
           </div>
         </div>
       </div>
-    </section>
-    <section class="testimonials" id="testimonials">
-      <div class="testimonial_main">
-        <div class="test_txt"><p>TESTIMONIALS</p></div>
-        <div class="desc_img_parent">
-          <img src="/assests/Images/testimonial/test3.png" alt="saleem_img" />
-          <div class="test_desc">
-            <p>"csPILLAI is a seasoned VB! I highly recommend them."</p>
-            <div class="saleem"><p>-Ajay</p></div>
-          </div>
-        </div>
-      </div>
+
+      <!--         </div> -->
     </section>
     <section class="about_us" id="about_us">
       <div class="section_header"><p>ABOUT US</p></div>
@@ -554,6 +621,7 @@
             for significant equity and engage us in, to co-own brand-new
             ventures and gain 2x to 10x profit upon exiting within 540 days!”
           </p>
+          <butto class="cspbutton">Invest-Exit-Gain</butto>
           <p>
             Ventures Mean Small Tech Startups and Small-Businesses. INVEST IN
             VENTURE BUILDING NOW, BENEFIT ON SUCCESSFUL EXITS LATER!
@@ -578,6 +646,12 @@
           <p>mail@cspillai.com</p>
           <p>1800 212 4503</p>
           <p>+91 8850762306</p>
+          <div class="social_media">
+            <img src="/assests/Images/logo/facebook.png" alt="" />
+            <img src="/assests/Images/logo/insta.png" alt="" />
+            <img src="/assests/Images/logo/linkedin.png" alt="" />
+            <img src="/assests/Images/logo/twitter.png" alt="" />
+          </div>
         </div>
         <div class="f_column_2">
           <div class="f_c_header"><p>Legal</p></div>
@@ -617,5 +691,44 @@
         </p>
       </div>
     </section>
+    <div id="mapid" style="height: 20rem"></div>
+
+    <script>
+      center = [18.934915, 73.145878];
+
+      var mymap = L.map("mapid").setView(center, 13);
+
+      L.tileLayer(
+        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+
+        {
+          attribution:
+            'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+
+          maxZoom: 18,
+
+          id: "mapbox/streets-v11",
+
+          tileSize: 512,
+
+          zoomOffset: -1,
+
+          accessToken:
+            "pk.eyJ1Ijoia2l0ZXJldHN1IiwiYSI6ImNqc216MTExNzA2NDE0OW80bWhyNmwyMmoifQ.v7pnFYhTlfA59e_sMBMSBA",
+        }
+      ).addTo(mymap);
+
+      var marker = L.marker(center).addTo(mymap);
+
+      marker
+
+        .bindPopup(
+          "<b>csPILLAI [SI PVT LTD]</b> <br> Sawala Apta Road, Panvel, Mumbai "
+        )
+
+        .openPopup();
+    </script>
+
+    <script src="js/testimonial.js"></script>
   </body>
 </html>

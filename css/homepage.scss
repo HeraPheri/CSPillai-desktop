@@ -5,6 +5,28 @@
   font-size: 1rem;
 }
 
+.cspbutton {
+  padding: 0.75rem 1rem;
+  background-color: #82c85c;
+  color: #fff;
+  border: none;
+  margin: 2rem 0;
+  border-radius: 0.75rem;
+  font-family: "Poppins";
+}
+
+.social_media {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+
+  img {
+    height: 30px;
+    width: 30px;
+    margin-left: 0.5rem;
+  }
+}
+
 .section_header p {
   font-family: "poppins";
   font-size: 3rem;
@@ -31,15 +53,26 @@
   font-size: 1rem;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 0;
+}
+
 .main {
   min-height: 1200px;
   position: relative;
   width: 100%;
   padding: 0 7.5vw;
   box-sizing: border-box;
-  background-image: url(/assests/Images/backgrounds/heroback.png);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/assests/Images/backgrounds/overlay.png),
+    url(/assests/Images/backgrounds/heroback.png);
+  background-size: contain;
+  background-position: top, center;
+  background-repeat: no-repeat;
 
   .header_div {
     height: 100px;
@@ -47,6 +80,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 
     .logo {
       margin-top: 15px;
@@ -75,18 +109,6 @@
           font-size: 1.05rem;
           color: white;
           text-align: right;
-        }
-
-        .social_media {
-          display: flex;
-          justify-content: flex-end;
-          margin-top: 0.5rem;
-
-          img {
-            height: 30px;
-            width: 30px;
-            margin-left: 0.5rem;
-          }
         }
       }
 
@@ -363,41 +385,7 @@
     }
   }
 }
-.testimonials {
-  min-height: 1000px;
-  position: relative;
-  width: 100%;
-  padding: 0 7.5vw;
-  box-sizing: border-box;
-  background-image: url(/assests/Images/backgrounds/testimback.png);
-  background-size: cover;
-  background-position: center;
 
-  .testimonial_main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .desc_img_parent {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-      margin-top: 50px;
-
-      img {
-        height: 200px;
-      }
-      .test_desc {
-        max-width: 35%;
-        .saleem {
-          margin-top: 50px;
-        }
-      }
-    }
-  }
-}
 .about_us {
   padding: 2rem 7.5vw;
   width: 100%;
@@ -519,9 +507,12 @@
   width: 100%;
   padding: 0 7.5vw;
   box-sizing: border-box;
-  background-image: url(/assests/Images/backgrounds/companyback.png);
-  background-size: cover;
-  background-position: center;
+
+  background-image: url(/assests/Images/backgrounds/overlay.png),
+    url(/assests/Images/backgrounds/companyback.png);
+  background-size: contain;
+  background-position: top, center;
+  background-repeat: no-repeat;
 
   .company_skills_parent {
     position: relative;
@@ -591,33 +582,35 @@
       flex-direction: column;
       max-width: 30%;
       justify-content: space-between;
+      align-items: center;
       img {
         height: 100px;
         width: 100px;
         align-items: flex-start;
-        margin: 20px 0px;
+        margin-bottom: 1rem;
       }
       p {
         font-family: "Roboto";
         color: #fff;
+        text-align: center;
+        line-height: 1.5;
       }
     }
     .f_column_2 {
-      display: flex;
-      flex-direction: column;
-
-      justify-content: space-evenly;
       .f_c_header {
         P {
           font-family: "Roboto";
           color: #fff;
           font-weight: bold;
+          margin-bottom: 2rem;
         }
       }
       p {
         font-family: "Roboto";
         color: #fff;
         font-weight: 00;
+
+        margin-bottom: 1rem;
       }
     }
   }
