@@ -638,6 +638,25 @@ body {
       justify-content: space-around;
 }
 
+@media (max-width: 400px) {
+  .areas .parent_column .row1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .areas .parent_column .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .areas .parent_column .area_cards {
+    margin-bottom: 1rem;
+    width: 180px;
+  }
+}
+
 .about_us {
   padding: 2rem 7.5vw;
   width: 100%;
@@ -833,6 +852,23 @@ body {
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 400px) {
+  .team .team_img_parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team .team_img_parent .team_card {
+    margin-bottom: 10px;
+  }
+  .team .team_img_parent .team_card img {
+    height: 325px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .company_skills {

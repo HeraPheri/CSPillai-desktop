@@ -445,6 +445,21 @@ body {
       justify-content: space-around;
     }
   }
+  @media (max-width: 400px) {
+    .parent_column {
+      .row1 {
+        flex-direction: column;
+      }
+      .row2 {
+        flex-direction: column;
+      }
+
+      .area_cards {
+        margin-bottom: 1rem;
+        width: 180px;
+      }
+    }
+  }
 }
 
 .about_us {
@@ -601,6 +616,19 @@ body {
       }
     }
   }
+  @media (max-width: 400px) {
+    .team_img_parent {
+      flex-direction: column;
+      .team_card {
+        margin-bottom: 10px;
+
+        img {
+          height: 325px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 
 .company_skills {
@@ -649,6 +677,7 @@ body {
     }
   }
 }
+
 .clients {
   .client_img {
     display: flex;
