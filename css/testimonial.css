@@ -43,7 +43,7 @@ html {
   position: relative;
 
   background-image: url(/assests/Images/backgrounds/overlay.png),
-    url("../assests/Images/backgrounds/testimback.png");
+    url(../assests/Images/backgrounds/testimback.png);
 
   background-position: center;
 
@@ -241,24 +241,6 @@ html {
   margin: auto;
 
   border-radius: 20px;
-}
-
-.testim .cont div h2 {
-  color: #ea830e;
-
-  font-size: 1em;
-
-  margin: 15px 0;
-}
-
-.testim .cont div p {
-  font-size: 1.15em;
-
-  color: #eee;
-
-  width: 80%;
-
-  margin: auto;
 }
 
 .testim .cont div.active .img img {
