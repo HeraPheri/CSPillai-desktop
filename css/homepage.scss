@@ -7,6 +7,11 @@
 body {
   font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
   width: 100vw;
+  overflow-x: hidden;
+}
+
+#more {
+  display: none;
 }
 
 @for $i from 1 through 6 {
@@ -19,18 +24,37 @@ body {
 }
 
 .section-padding {
-  padding: 3rem 6.5vw;
+  padding: 1rem 6.5vw;
+}
+
+.temp_pad {
+  padding: 1rem 6.5vw;
+}
+.gooty_padding {
+  padding: 1rem 6.5vw;
 }
 
 @media (max-width: 700px) {
   .section-padding {
     padding: 3rem 6.5vw;
   }
+  .gooty_padding {
+    padding: 1rem 6.5vw;
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 1100px) {
   .section-padding {
     padding: 3rem 10vw;
+  }
+  .gooty_padding {
+    padding: 1rem 10vw;
+    padding-bottom: 0;
+  }
+
+  .temp_pad {
+    padding: 1rem 10vw;
   }
 }
 .section_header {
@@ -41,7 +65,7 @@ body {
 
 .section_header_small {
   font-family: "poppins";
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -55,14 +79,14 @@ body {
 
 .section_desc {
   font-family: "Roboto";
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-weight: normal;
   line-height: 1.4;
 }
 
 .section_desc_contact {
   font-family: "Roboto";
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -75,7 +99,7 @@ body {
 
 .section_desc_small {
   font-family: "Roboto";
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -486,8 +510,8 @@ nav {
   align-items: center;
 
   .middlediv {
-    width: 70%;
-    max-width: 775px;
+    width: 100%;
+    max-width: 700px;
     box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.1);
     border-radius: 15px;
     padding: 3rem 3.5rem;
@@ -504,30 +528,27 @@ nav {
     margin-top: 80px;
 
     .gooty_card {
-      width: 30%;
+      width: 32%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       min-height: 550px;
       box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.1);
-      border-radius: 2rem;
+      border-radius: 1.5rem;
 
       img {
         align-items: center;
         width: 70%;
-        margin-bottom: 1.5rem;
+        height: 70%;
+        margin-bottom: 2rem;
       }
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .gooty_parent {
-      flex-direction: column;
-      .gooty_card {
-        margin-bottom: 2rem;
-        display: none;
-      }
+      display: none;
     }
   }
 
@@ -559,7 +580,7 @@ nav {
       width: 45%;
     }
 
-    .show_img {
+    .show_img_pc {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -568,16 +589,19 @@ nav {
 
       img {
         width: 100%;
+        max-width: 342px;
       }
       button {
         width: 60%;
+        max-width: 205px;
         margin: 0;
         border-radius: 0 0 15px 15px;
+        font-size: 1.15rem;
       }
     }
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 700px) {
     .show_desc {
       flex-direction: column;
       p {
@@ -585,8 +609,8 @@ nav {
         margin-bottom: 2rem;
       }
 
-      .show_img {
-        width: 100%;
+      .show_img_pc {
+        display: none;
       }
     }
   }
@@ -981,7 +1005,7 @@ nav {
     @media (max-width: 600px) {
       .company_chart {
         transform: rotate(90deg);
-        width: 95%;
+        width: 100%;
       }
     }
   }
@@ -989,14 +1013,19 @@ nav {
 
 .clients {
   width: 100%;
-  .client_img {
+
+  .client_img > .row {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    img {
-      width: 20vw;
-    }
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .client_img > .row > img {
+    margin-right: 2rem;
+    width: 20vw;
+    min-width: 200px;
   }
 }
 
@@ -1032,18 +1061,19 @@ nav {
           width: 100%;
           resize: none;
           margin-bottom: 1rem;
-          padding: 0 10px;
+          padding: 10px 10px;
+          font-size: 1rem;
+          font-family: "poppins";
         }
       }
     }
   }
-  @media (max-width: 400px) {
-    .contact_us {
-      p {
-        font-size: 10px;
-      }
-      .contact_row {
-        flex-direction: column;
+  @media (max-width: 600px) {
+    .contact_row {
+      flex-direction: column;
+      .form,
+      .map {
+        width: 100%;
       }
     }
   }
@@ -1124,20 +1154,17 @@ nav {
     }
   }
   .bottom_end {
-    width: 80%;
+    width: 100%;
+    max-width: 800px;
     background-color: #fff;
     margin: 0 auto;
     padding: 1rem;
     border-radius: 15px;
-    .section_header {
-      text-align: center;
 
-      p {
-        margin: 0 auto;
-        font-size: 3rem;
-      }
-    }
     .we_are_info {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -1145,7 +1172,7 @@ nav {
       p {
         margin: 10px auto;
         font-family: "Roboto";
-        padding: 0px 80px;
+        padding: 0px;
       }
     }
     .we_bold {
@@ -1155,6 +1182,7 @@ nav {
   }
   .end {
     width: 100%;
+    text-align: center;
     p {
       margin: 20px auto;
       font-family: "Roboto";
