@@ -39,14 +39,11 @@ html {
 
   width: 100%;
   height: 700px;
-
   position: relative;
-
   background-image: url(/assests/Images/backgrounds/overlay.png),
     url(../assests/Images/backgrounds/testimback.png);
 
   background-position: center;
-
   background-size: cover;
 }
 
