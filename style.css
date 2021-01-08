@@ -109,7 +109,7 @@ li {
 }
 
 .gooty_desc_p p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "poppins";
   margin-bottom: 0.5rem;
 }
@@ -120,7 +120,7 @@ li {
 
 li button {
   padding: 1rem 2rem;
-  background-color: red;
+  background-color: green;
   color: #fff;
   border-radius: 0px 0px 20px 20px;
   margin: 0;
