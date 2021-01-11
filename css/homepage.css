@@ -653,7 +653,7 @@ nav {
     height: 38px;
   }
   .main .mobnavtop .header_contact_mob {
-    width: 60%;
+    width: 55%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -663,7 +663,7 @@ nav {
             flex-direction: column;
   }
   .main .mobnavtop .header_contact_mob .section_desc_contact {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .main .mobnavtop .header_contact_mob .social_media {
     -webkit-box-align: start;
