@@ -7,7 +7,7 @@
 }
 
 body {
-  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
   width: 100vw;
   overflow-x: hidden;
 }
@@ -390,9 +390,8 @@ nav {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(/assests/Images/backgrounds/overlay.png), url(/assests/Images/backgrounds/heroback.png);
+  background-image: url(/assests/Images/backgrounds/heroback.png);
   background-size: cover;
-  background-position: top, center;
   background-repeat: no-repeat;
 }
 
@@ -489,6 +488,7 @@ nav {
 }
 
 .main .intro .heading_2 p {
+  width: 50%;
   font-family: "Poppins";
   font-size: 2.25rem;
   font-weight: Medium;
@@ -622,6 +622,101 @@ nav {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 0.5rem;
+  }
+}
+
+.second_skin {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .main {
+    background-image: url(/assests/Images/backgrounds/back.png);
+    background-size: cover;
+    background-position: center;
+    height: 1130px;
+    padding: 1.5rem 1.5rem;
+  }
+  .main .mobnavtop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  .main .mobnavtop .logo_2 {
+    height: 38px;
+  }
+  .main .mobnavtop .header_contact_mob {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .mobnavtop .header_contact_mob .section_desc_contact {
+    font-size: 0.8rem;
+  }
+  .main .mobnavtop .header_contact_mob .social_media {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+  .main .mobnavtop .header_contact_mob .social_media img {
+    width: 25px;
+    height: 25px;
+  }
+  .main .mobNav {
+    margin-bottom: 2.2rem;
+  }
+  .main .intro {
+    width: 100%;
+  }
+  .main .intro .heading_1 > p {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 5.2rem;
+  }
+  .main .intro .heading_2 > p {
+    font-size: 25px;
+    margin-bottom: 4rem;
+  }
+  .main .intro .heading_3 > p {
+    font-size: 18px;
+    margin-bottom: 12rem;
+  }
+  .main .footer_1 {
+    display: none;
+  }
+  .second_skin {
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+  .second_skin > h1 {
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
   }
 }
 
@@ -1372,9 +1467,8 @@ nav {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(/assests/Images/backgrounds/overlay.png), url(/assests/Images/backgrounds/companyback.png);
+  background-image: url(/assests/Images/backgrounds/companyback.png);
   background-size: cover;
-  background-position: top, center;
   background-repeat: no-repeat;
 }
 
@@ -1390,16 +1484,92 @@ nav {
 }
 
 .company_skills .company_skills_parent .company_chart {
-  width: 85%;
-  margin: 50px auto;
-  margin-top: 2rem;
+  display: none;
 }
 
-@media (max-width: 600px) {
+.company_skills .company_skills_parent .skill_bars {
+  position: relative;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: "poppins";
+}
+
+.company_skills .company_skills_parent .skill_bars > .skill_bar {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.company_skills .company_skills_parent .skill_bars > .skill_bar > .percent {
+  position: absolute;
+  display: block;
+  top: 45%;
+  font-weight: 500;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 0;
+  color: #fff;
+}
+
+.company_skills .company_skills_parent .skill_bars > .skill_bar > .innovation {
+  padding-left: 1rem;
+  line-height: 100px;
+  height: 100px;
+  width: 100%;
+  background-color: #2d8a5e;
+  font-weight: 500;
+}
+
+.company_skills .company_skills_parent .skill_bars > .skill_bar > .business {
+  padding-left: 1rem;
+  line-height: 100px;
+  height: 100px;
+  width: 80%;
+  background-color: #4dbb74;
+  font-weight: 500;
+}
+
+.company_skills .company_skills_parent .skill_bars > .skill_bar > .digital {
+  padding-left: 1rem;
+  line-height: 100px;
+  height: 100px;
+  width: 70%;
+  background-color: #82c85c;
+  font-weight: 500;
+}
+
+.company_skills .company_skills_parent .skill_bars > .skill_bar > .cloud {
+  padding-left: 1rem;
+  line-height: 100px;
+  height: 100px;
+  width: 65%;
+  background-color: #bfef4e;
+  font-weight: 500;
+}
+
+.company_skills .company_skills_parent .skill_bars > .skill_bar > .rnd {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  height: 100px;
+  width: 50%;
+  padding-top: 20px;
+  background-color: #4ac58b;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
   .company_skills .company_skills_parent .company_chart {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    width: 100%;
+    display: block;
+    width: 85%;
+    margin: 50px auto;
+    margin-top: 2rem;
+  }
+  .company_skills .company_skills_parent .skill_bars {
+    display: none;
   }
 }
 
