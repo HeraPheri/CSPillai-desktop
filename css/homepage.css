@@ -687,6 +687,7 @@ nav {
     margin-bottom: 5.2rem;
   }
   .main .intro .heading_2 > p {
+    width: 100%;
     font-size: 25px;
     margin-bottom: 4rem;
   }
