@@ -675,6 +675,9 @@ nav {
     width: 25px;
     height: 25px;
   }
+  .main .exit p {
+    font-size: 1.5rem;
+  }
   .main .mobNav {
     margin-bottom: 2.2rem;
   }
