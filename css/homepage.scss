@@ -104,7 +104,7 @@ html {
 
 .section_desc_small {
   font-family: "Roboto";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -671,9 +671,9 @@ nav {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      min-height: 700px;
       .gooty_card {
         width: 100%;
-        min-height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -843,7 +843,7 @@ nav {
           align-items: center;
           flex-direction: column;
           margin: 15px 0;
-          padding: 10px 0px;
+          padding: 20px 0px;
           height: 180px;
           border-radius: 12px;
           box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.1);
@@ -874,7 +874,7 @@ nav {
           align-items: center;
           flex-direction: column;
           margin: 15px 0;
-          padding: 10px 0px;
+          padding: 20px 0px;
           height: 180px;
           border-radius: 12px;
           box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.1);
