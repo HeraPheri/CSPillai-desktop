@@ -132,7 +132,7 @@ html {
 
 .section_desc_contact {
   font-family: "Roboto";
-  font-size: 1.15rem;
+  font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -186,9 +186,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .section_desc p {
@@ -233,7 +233,7 @@ html {
   overflow: hidden;
   -webkit-transition: width 0.2s;
   transition: width 0.2s;
-  border-radius: 10px;
+  border-radius: 50px;
   z-index: 999;
 }
 
@@ -416,7 +416,7 @@ nav {
 }
 
 .main .header_div .logo_2 {
-  height: 60px;
+  height: 80px;
 }
 
 .main .header_div .header_right {
@@ -553,6 +553,12 @@ nav {
   font-size: 1.2rem;
   border-radius: 0.75rem;
   font-family: "Poppins";
+}
+
+@media (min-width: 800px) {
+  .main .exit {
+    margin-top: 11rem;
+  }
 }
 
 .main .footer_1 {
