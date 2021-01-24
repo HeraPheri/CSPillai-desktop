@@ -105,14 +105,27 @@ html {
 
 .section_header {
   font-family: "poppins";
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 .section_header_small {
   font-family: "poppins";
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .section_header {
+    font-family: "poppins";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .section_header_small {
+    font-family: "poppins";
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }
 
 .user_name {
@@ -125,9 +138,31 @@ html {
 
 .section_desc {
   font-family: "Roboto";
-  font-size: 1.15rem;
+  font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.4;
+}
+
+.section_desc_small {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+  .section_desc {
+    font-family: "Roboto";
+    font-size: 1.15rem;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+  .section_desc_small {
+    font-family: "Roboto";
+    font-size: 1.05rem;
+    font-weight: normal;
+    line-height: 1.4;
+  }
 }
 
 .section_desc_contact {
@@ -141,13 +176,6 @@ html {
   .section_desc_contact {
     font-size: 0.95rem;
   }
-}
-
-.section_desc_small {
-  font-family: "Roboto";
-  font-size: 1.05rem;
-  font-weight: normal;
-  line-height: 1.4;
 }
 
 .txt_green {
@@ -749,6 +777,9 @@ nav {
 .purpose .middlediv {
   width: 100%;
   max-width: 700px;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  line-height: 1.3;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -774,7 +805,7 @@ nav {
 }
 
 .schemes_gooty .gooty_parent .gooty_card_cont {
-  width: 32%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,7 +870,7 @@ nav {
 }
 
 .schemes_gooty .gooty_parent .gooty_card_cont_small {
-  width: 32%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -857,7 +888,7 @@ nav {
 
 .schemes_gooty .gooty_parent .gooty_card_cont_small .gooty_card {
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,7 +913,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
+  width: 64%;
   margin-bottom: 3.5rem;
 }
 
@@ -975,7 +1006,7 @@ nav {
 
 .showcase .show_desc .show_img_pc img {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .showcase .show_desc .show_img_pc button {

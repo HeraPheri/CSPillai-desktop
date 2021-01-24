@@ -210,9 +210,28 @@ li {
 }
 
 .gooty_desc_p p {
-  font-size: 1rem;
-  font-family: "poppins";
+  font-size: 1.4rem;
+  font-family: "roboto";
   margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .gooty_desc_p p {
+    font-size: 1.2rem;
+    font-family: "roboto";
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1000px) {
+  .gooty_desc_p p {
+    font-size: 1rem;
+    font-family: "roboto";
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
 }
 
 .gooty_card_mob div img {
