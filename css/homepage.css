@@ -8,8 +8,21 @@
 
 body {
   font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
-  width: 100vw;
   overflow-x: hidden;
+  width: calc(100vw-2rem);
+}
+
+.outline {
+  padding: 1rem;
+}
+
+@media (min-width: 700px) {
+  .outline {
+    padding: 0;
+  }
+  body {
+    width: 100vw;
+  }
 }
 
 html {
