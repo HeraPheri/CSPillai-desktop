@@ -12,15 +12,6 @@ body {
 .outline {
   padding: 1rem;
 }
-@media (min-width: 700px) {
-  .outline {
-    padding: 0;
-  }
-  body {
-    width: 100vw;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
