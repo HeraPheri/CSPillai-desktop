@@ -39,6 +39,9 @@ html {
 .gooty_padding {
   padding: 1rem 6.5vw;
 }
+.extra_padding {
+  padding: 1rem 16vw;
+}
 
 @media (max-width: 700px) {
   .section-padding {
@@ -661,12 +664,15 @@ nav {
 
 .schemes_gooty {
   .gooty_parent {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     .gooty_card_cont {
       width: 30%;
       display: flex;
@@ -674,6 +680,7 @@ nav {
       justify-content: space-between;
       align-items: center;
       min-height: 700px;
+
       .gooty_card {
         width: 100%;
         display: flex;
@@ -752,6 +759,10 @@ nav {
   }
 
   .gootycart_card {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
