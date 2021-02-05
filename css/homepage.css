@@ -113,7 +113,7 @@ html {
 
 .section_header {
   font-family: "poppins";
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -151,10 +151,24 @@ html {
   line-height: 1.4;
 }
 
+.section_desc_white {
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
 .section_desc_small {
   font-family: "Roboto";
   font-size: 1.2rem;
   font-weight: normal;
+  line-height: 1.4;
+}
+
+.section_desc_areas {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: 700;
   line-height: 1.4;
 }
 
@@ -795,7 +809,7 @@ nav {
 }
 
 .schemes_gooty .gooty_parent {
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,7 +845,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 700px;
+  min-height: 900px;
 }
 
 .schemes_gooty .gooty_parent .gooty_card_cont .gooty_card {
@@ -854,6 +868,7 @@ nav {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 1.5rem;
+  min-height: 900px;
 }
 
 .schemes_gooty .gooty_parent .gooty_card_cont .gooty_card img {
@@ -982,6 +997,10 @@ nav {
   width: 100%;
 }
 
+.showcase .showcase_big {
+  width: 30%;
+}
+
 .showcase .show_desc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -993,14 +1012,14 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
 }
 
 .showcase .show_desc p {
-  width: 45%;
+  width: 100%;
   line-height: 1.5;
 }
 
@@ -1018,12 +1037,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 45%;
+  width: 55%;
 }
 
 .showcase .show_desc .show_img_pc img {
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
+  margin-left: 2rem;
 }
 
 .showcase .show_desc .show_img_pc button {
@@ -1454,12 +1474,17 @@ nav {
 }
 
 .team .team_parent {
+  padding-left: 4rem;
   width: 100%;
   max-width: 700px;
 }
 
 .team .team_img_parent {
-  width: 100%;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1483,7 +1508,7 @@ nav {
 .team .team_img_parent .team_card img {
   width: 100%;
   border-radius: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .team .team_img_parent .team_name p {
@@ -1491,7 +1516,7 @@ nav {
   color: #fff;
   font-weight: bold;
   font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .team .team_img_parent .team_position p {
@@ -1499,7 +1524,7 @@ nav {
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 550px) {

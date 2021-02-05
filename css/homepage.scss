@@ -68,7 +68,7 @@ html {
 }
 .section_header {
   font-family: "poppins";
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -106,11 +106,23 @@ html {
   font-weight: normal;
   line-height: 1.4;
 }
+.section_desc_white {
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
 
 .section_desc_small {
   font-family: "Roboto";
   font-size: 1.2rem;
   font-weight: normal;
+  line-height: 1.4;
+}
+.section_desc_areas {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: 700;
   line-height: 1.4;
 }
 
@@ -664,7 +676,7 @@ nav {
 
 .schemes_gooty {
   .gooty_parent {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -679,7 +691,7 @@ nav {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      min-height: 700px;
+      min-height: 900px;
 
       .gooty_card {
         width: 100%;
@@ -691,6 +703,7 @@ nav {
         padding: 2rem 1rem;
         box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.1);
         border-radius: 1.5rem;
+        min-height: 900px;
 
         img {
           align-items: center;
@@ -781,14 +794,17 @@ nav {
 }
 .showcase {
   width: 100%;
+  .showcase_big {
+    width: 30%;
+  }
   .show_desc {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     p {
-      width: 45%;
+      width: 100%;
       line-height: 1.5;
     }
 
@@ -797,11 +813,12 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 45%;
+      width: 55%;
 
       img {
         width: 100%;
-        max-width: 400px;
+        max-width: 100%;
+        margin-left: 2rem;
       }
       button {
         width: 60%;
@@ -1130,11 +1147,15 @@ nav {
 .team {
   position: relative;
   .team_parent {
+    padding-left: 4rem;
     width: 100%;
     max-width: 700px;
   }
   .team_img_parent {
-    width: 100%;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: row;
     margin: 50px 0;
@@ -1150,7 +1171,7 @@ nav {
       img {
         width: 100%;
         border-radius: 20px;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
     }
     .team_name {
@@ -1159,7 +1180,7 @@ nav {
         color: #fff;
         font-weight: bold;
         font-size: 1.4rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 2rem;
       }
     }
     .team_position {
@@ -1168,7 +1189,7 @@ nav {
         color: #fff;
         font-weight: 500;
         font-size: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
     }
   }
