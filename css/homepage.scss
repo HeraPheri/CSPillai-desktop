@@ -676,6 +676,10 @@ nav {
 }
 
 .schemes_gooty {
+  .flexible {
+    width: 100%;
+    max-width: 900px;
+  }
   .gooty_parent {
     width: 90%;
     display: flex;

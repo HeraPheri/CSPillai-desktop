@@ -812,6 +812,11 @@ nav {
   padding: 3rem 3.5rem;
 }
 
+.schemes_gooty .flexible {
+  width: 100%;
+  max-width: 900px;
+}
+
 .schemes_gooty .gooty_parent {
   width: 90%;
   display: -webkit-box;
