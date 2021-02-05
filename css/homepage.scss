@@ -659,6 +659,7 @@ nav {
   width: 100%;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -833,6 +834,9 @@ nav {
   @media (max-width: 700px) {
     .show_desc {
       flex-direction: column;
+      .showcase_big {
+        width: 100%;
+      }
       p {
         width: 100%;
         margin-bottom: 2rem;
